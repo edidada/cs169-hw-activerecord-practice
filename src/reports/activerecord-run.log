@@ -1,0 +1,429 @@
+﻿2026-11-09T05:27:33.7487344Z Current runner version: '2.338.2'
+2026-11-09T05:27:33.7510254Z ##[group]Runner Image Provisioner
+2026-11-09T05:27:33.7511021Z Hosted Compute Agent
+2026-11-09T05:27:33.7511549Z Version: 20261028.624
+2026-11-09T05:27:33.7512123Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-09T05:27:33.7512783Z Build Date: 2026-10-28T21:51:42Z
+2026-11-09T05:27:33.7513364Z Worker ID: {a27f1f01-a177-4370-b5ac-d55f364c7b7c}
+2026-11-09T05:27:33.7514018Z Region: westus2
+2026-11-09T05:27:33.7514512Z Cloud: Azure
+2026-11-09T05:27:33.7515008Z ##[endgroup]
+2026-11-09T05:27:33.7516370Z ##[group]Operating System
+2026-11-09T05:27:33.7516916Z Ubuntu
+2026-11-09T05:27:33.7517354Z 24.04.5
+2026-11-09T05:27:33.7517857Z LTS
+2026-11-09T05:27:33.7518339Z ##[endgroup]
+2026-11-09T05:27:33.7518836Z ##[group]Runner Image
+2026-11-09T05:27:33.7519423Z Image: ubuntu-24.04
+2026-11-09T05:27:33.7519936Z Version: 20261101.360.1
+2026-11-09T05:27:33.7521022Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-09T05:27:33.7522343Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+2026-11-09T05:27:33.7523185Z ##[endgroup]
+2026-11-09T05:27:33.7524158Z ##[group]GITHUB_TOKEN Permissions
+2026-11-09T05:27:33.7526161Z Contents: read
+2026-11-09T05:27:33.7526637Z Metadata: read
+2026-11-09T05:27:33.7527504Z ##[endgroup]
+2026-11-09T05:27:33.7529292Z Secret source: Actions
+2026-11-09T05:27:33.7530178Z Cache mode: write
+2026-11-09T05:27:33.7530803Z Prepare workflow directory
+2026-11-09T05:27:33.7800598Z Prepare all required actions
+2026-11-09T05:27:33.7844113Z Getting action download info
+2026-11-09T05:27:34.1241184Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-09T05:27:34.2717532Z Download action repository 'ruby/setup-ruby@v1' (SHA:b3aaceaef7e0ee231b499e7b5f49c03fc1d32199)
+2026-11-09T05:27:34.4589850Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-09T05:27:34.6982754Z Complete job name: activerecord
+2026-11-09T05:27:34.7691341Z ##[group]Run actions/checkout@v4
+2026-11-09T05:27:34.7692040Z with:
+2026-11-09T05:27:34.7692465Z   repository: edidada/cs169-hw-activerecord-practice
+2026-11-09T05:27:34.7695844Z   token: ***
+2026-11-09T05:27:34.7696231Z   ssh-strict: true
+2026-11-09T05:27:34.7696591Z   ssh-user: git
+2026-11-09T05:27:34.7696968Z   persist-credentials: true
+2026-11-09T05:27:34.7697366Z   clean: true
+2026-11-09T05:27:34.7697734Z   sparse-checkout-cone-mode: true
+2026-11-09T05:27:34.7698154Z   fetch-depth: 1
+2026-11-09T05:27:34.7698498Z   fetch-tags: false
+2026-11-09T05:27:34.7698860Z   show-progress: true
+2026-11-09T05:27:34.7699223Z   lfs: false
+2026-11-09T05:27:34.7699556Z   submodules: false
+2026-11-09T05:27:34.7699927Z   set-safe-directory: true
+2026-11-09T05:27:34.7700335Z   allow-unsafe-pr-checkout: false
+2026-11-09T05:27:34.7700925Z ##[endgroup]
+2026-11-09T05:27:35.1786524Z Syncing repository: edidada/cs169-hw-activerecord-practice
+2026-11-09T05:27:35.1789090Z ##[group]Getting Git version info
+2026-11-09T05:27:35.1790266Z Working directory is '/home/runner/work/cs169-hw-activerecord-practice/cs169-hw-activerecord-practice'
+2026-11-09T05:27:35.1791886Z [command]/usr/bin/git version
+2026-11-09T05:27:35.2428302Z git version 2.56.0
+2026-11-09T05:27:35.2444899Z ##[endgroup]
+2026-11-09T05:27:35.2457500Z Temporarily overriding HOME='/home/runner/work/_temp/5e8dabf2-736b-481a-9047-64cf347deb20' before making global git config changes
+2026-11-09T05:27:35.2460458Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-09T05:27:35.2463477Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cs169-hw-activerecord-practice/cs169-hw-activerecord-practice
+2026-11-09T05:27:35.2529077Z Deleting the contents of '/home/runner/work/cs169-hw-activerecord-practice/cs169-hw-activerecord-practice'
+2026-11-09T05:27:35.2534646Z ##[group]Initializing the repository
+2026-11-09T05:27:35.2538216Z [command]/usr/bin/git init /home/runner/work/cs169-hw-activerecord-practice/cs169-hw-activerecord-practice
+2026-11-09T05:27:35.2674089Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-09T05:27:35.2676823Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-09T05:27:35.2679014Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-09T05:27:35.2680667Z hint: call:
+2026-11-09T05:27:35.2681571Z hint:
+2026-11-09T05:27:35.2682697Z hint: 	git config --global init.defaultBranch <name>
+2026-11-09T05:27:35.2684031Z hint:
+2026-11-09T05:27:35.2685659Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-09T05:27:35.2688379Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-09T05:27:35.2690665Z hint:
+2026-11-09T05:27:35.2691957Z hint: 	git branch -m <name>
+2026-11-09T05:27:35.2693333Z hint:
+2026-11-09T05:27:35.2695311Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-09T05:27:35.2699051Z Initialized empty Git repository in /home/runner/work/cs169-hw-activerecord-practice/cs169-hw-activerecord-practice/.git/
+2026-11-09T05:27:35.2708292Z [command]/usr/bin/git remote add origin https://github.com/edidada/cs169-hw-activerecord-practice
+2026-11-09T05:27:35.2768492Z ##[endgroup]
+2026-11-09T05:27:35.2770695Z ##[group]Disabling automatic garbage collection
+2026-11-09T05:27:35.2772765Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-09T05:27:35.2820350Z ##[endgroup]
+2026-11-09T05:27:35.2821960Z ##[group]Setting up auth
+2026-11-09T05:27:35.2828416Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-09T05:27:35.2870086Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-09T05:27:35.5040698Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-09T05:27:35.5082664Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-09T05:27:35.5297935Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-09T05:27:35.5338009Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-09T05:27:35.5551894Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-09T05:27:35.5598976Z ##[endgroup]
+2026-11-09T05:27:35.5609989Z ##[group]Fetching the repository
+2026-11-09T05:27:35.5610896Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7012e56d5eaa8cf44bf4f75d19621436e8982a3b:refs/remotes/origin/edidada/cs169-hw
+2026-11-09T05:27:35.9174833Z From https://github.com/edidada/cs169-hw-activerecord-practice
+2026-11-09T05:27:35.9175953Z  * [new ref]         7012e56d5eaa8cf44bf4f75d19621436e8982a3b -> origin/edidada/cs169-hw
+2026-11-09T05:27:35.9178661Z ##[endgroup]
+2026-11-09T05:27:35.9179556Z ##[group]Determining the checkout info
+2026-11-09T05:27:35.9181540Z ##[endgroup]
+2026-11-09T05:27:35.9187938Z [command]/usr/bin/git sparse-checkout disable
+2026-11-09T05:27:35.9246819Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-09T05:27:35.9283437Z ##[group]Checking out the ref
+2026-11-09T05:27:35.9288265Z [command]/usr/bin/git checkout --progress --force -B edidada/cs169-hw refs/remotes/origin/edidada/cs169-hw
+2026-11-09T05:27:35.9365350Z Switched to a new branch 'edidada/cs169-hw'
+2026-11-09T05:27:35.9369508Z branch 'edidada/cs169-hw' set up to track 'origin/edidada/cs169-hw'.
+2026-11-09T05:27:35.9374743Z ##[endgroup]
+2026-11-09T05:27:35.9420838Z [command]/usr/bin/git log -1 --format=%H
+2026-11-09T05:27:35.9451496Z 7012e56d5eaa8cf44bf4f75d19621436e8982a3b
+2026-11-09T05:27:35.9693422Z ##[group]Run ruby/setup-ruby@v1
+2026-11-09T05:27:35.9693719Z with:
+2026-11-09T05:27:35.9693929Z   ruby-version: 3.3
+2026-11-09T05:27:35.9694156Z   bundler-cache: false
+2026-11-09T05:27:35.9696290Z   token: ***
+2026-11-09T05:27:35.9696505Z ##[endgroup]
+2026-11-09T05:27:36.1205103Z ##[group]Modifying PATH
+2026-11-09T05:27:36.1205891Z Entries added to PATH to use selected Ruby:
+2026-11-09T05:27:36.1206971Z   /opt/hostedtoolcache/Ruby/3.3.13/x64/bin
+2026-11-09T05:27:36.1210855Z ##[endgroup]
+2026-11-09T05:27:36.1214050Z ##[group]Print Ruby version
+2026-11-09T05:27:36.1384393Z [command]/opt/hostedtoolcache/Ruby/3.3.13/x64/bin/ruby --version
+2026-11-09T05:27:36.3701007Z ruby 3.3.13 (2026-10-23 revision af48f08f21) [x86_64-linux]
+2026-11-09T05:27:36.3732787Z Took   0.25 seconds
+2026-11-09T05:27:36.3733736Z ##[endgroup]
+2026-11-09T05:27:36.3734524Z ##[group]Installing Bundler
+2026-11-09T05:27:36.3737912Z Using Bundler shipped with ruby-3.3.13
+2026-11-09T05:27:36.3738798Z Took   0.00 seconds
+2026-11-09T05:27:36.3739435Z ##[endgroup]
+2026-11-09T05:27:36.3852688Z ##[group]Run bundle install --jobs 4
+2026-11-09T05:27:36.3853088Z [36;1mbundle install --jobs 4[0m
+2026-11-09T05:27:36.3876651Z shell: /usr/bin/bash -e {0}
+2026-11-09T05:27:36.3876941Z ##[endgroup]
+2026-11-09T05:27:40.0618385Z Fetching gem metadata from https://rubygems.org/............
+2026-11-09T05:27:40.3763378Z Resolving dependencies...
+2026-11-09T05:27:40.7819141Z Fetching base64 0.3.0
+2026-11-09T05:27:40.7820755Z Fetching benchmark 0.5.0
+2026-11-09T05:27:40.7821240Z Fetching bigdecimal 4.1.3
+2026-11-09T05:27:40.7821638Z Fetching concurrent-ruby 1.3.8
+2026-11-09T05:27:41.3025822Z Installing base64 0.3.0
+2026-11-09T05:27:41.3036778Z Installing benchmark 0.5.0
+2026-11-09T05:27:41.3118717Z Fetching connection_pool 2.5.5
+2026-11-09T05:27:41.3142178Z Installing bigdecimal 4.1.3 with native extensions
+2026-11-09T05:27:41.3187775Z Fetching drb 2.2.3
+2026-11-09T05:27:41.3221290Z Installing connection_pool 2.5.5
+2026-11-09T05:27:41.3312028Z Fetching logger 1.7.0
+2026-11-09T05:27:41.3313994Z Installing drb 2.2.3
+2026-11-09T05:27:41.3362471Z Installing concurrent-ruby 1.3.8
+2026-11-09T05:27:41.3426893Z Installing logger 1.7.0
+2026-11-09T05:27:41.3502181Z Fetching minitest 5.27.0
+2026-11-09T05:27:41.3560485Z Fetching securerandom 0.4.1
+2026-11-09T05:27:41.3664913Z Installing minitest 5.27.0
+2026-11-09T05:27:41.3666298Z Installing securerandom 0.4.1
+2026-11-09T05:27:41.3763487Z Fetching timeout 0.6.1
+2026-11-09T05:27:41.3870809Z Installing timeout 0.6.1
+2026-11-09T05:27:41.4006574Z Fetching byebug 12.0.0
+2026-11-09T05:27:41.4053725Z Fetching coderay 1.1.3
+2026-11-09T05:27:41.4300783Z Installing byebug 12.0.0 with native extensions
+2026-11-09T05:27:41.4356184Z Installing coderay 1.1.3
+2026-11-09T05:27:41.4689979Z Fetching diff-lcs 1.6.2
+2026-11-09T05:27:41.4840166Z Installing diff-lcs 1.6.2
+2026-11-09T05:27:41.4900729Z Fetching ffi 1.17.4 (x86_64-linux-gnu)
+2026-11-09T05:27:41.5344598Z Installing ffi 1.17.4 (x86_64-linux-gnu)
+2026-11-09T05:27:41.5378573Z Fetching io-console 0.9.5
+2026-11-09T05:27:41.5481834Z Installing io-console 0.9.5 with native extensions
+2026-11-09T05:27:41.5990490Z Fetching rb-fsevent 0.11.2
+2026-11-09T05:27:41.6106264Z Installing rb-fsevent 0.11.2
+2026-11-09T05:27:41.6156202Z Fetching lumberjack 1.4.2
+2026-11-09T05:27:41.6247163Z Installing lumberjack 1.4.2
+2026-11-09T05:27:41.6358117Z Fetching nenv 0.3.0
+2026-11-09T05:27:41.6456498Z Installing nenv 0.3.0
+2026-11-09T05:27:41.6484179Z Fetching shellany 0.0.1
+2026-11-09T05:27:41.6567917Z Installing shellany 0.0.1
+2026-11-09T05:27:41.6608252Z Fetching method_source 1.1.0
+2026-11-09T05:27:41.6690726Z Installing method_source 1.1.0
+2026-11-09T05:27:41.6727723Z Fetching thor 1.5.0
+2026-11-09T05:27:41.7002354Z Installing thor 1.5.0
+2026-11-09T05:27:41.7100381Z Fetching guard-compat 1.2.1
+2026-11-09T05:27:41.7200843Z Installing guard-compat 1.2.1
+2026-11-09T05:27:41.7240189Z Fetching rspec-support 3.13.8
+2026-11-09T05:27:41.7341309Z Installing rspec-support 3.13.8
+2026-11-09T05:27:41.7413901Z Fetching sqlite3 2.10.2 (x86_64-linux-gnu)
+2026-11-09T05:27:41.8221634Z Installing sqlite3 2.10.2 (x86_64-linux-gnu)
+2026-11-09T05:27:41.8766680Z Fetching i18n 1.15.2
+2026-11-09T05:27:41.8860349Z Installing i18n 1.15.2
+2026-11-09T05:27:41.8950537Z Fetching tzinfo 2.0.6
+2026-11-09T05:27:41.9058524Z Installing tzinfo 2.0.6
+2026-11-09T05:27:41.9160705Z Fetching rb-inotify 0.11.1
+2026-11-09T05:27:41.9246378Z Installing rb-inotify 0.11.1
+2026-11-09T05:27:41.9293556Z Fetching notiffany 0.1.3
+2026-11-09T05:27:41.9473619Z Installing notiffany 0.1.3
+2026-11-09T05:27:41.9567576Z Fetching rspec-core 3.13.7
+2026-11-09T05:27:41.9782957Z Installing rspec-core 3.13.7
+2026-11-09T05:27:41.9924589Z Fetching rspec-expectations 3.13.6
+2026-11-09T05:27:42.0025756Z Installing rspec-expectations 3.13.6
+2026-11-09T05:27:42.0114728Z Fetching rspec-mocks 3.13.9
+2026-11-09T05:27:42.0218234Z Installing rspec-mocks 3.13.9
+2026-11-09T05:27:42.0294660Z Fetching listen 3.10.1
+2026-11-09T05:27:42.0386603Z Installing listen 3.10.1
+2026-11-09T05:27:42.0456308Z Fetching rspec 3.13.2
+2026-11-09T05:27:42.0543067Z Installing rspec 3.13.2
+2026-11-09T05:27:46.7549183Z Fetching reline 0.7.0
+2026-11-09T05:27:46.9299188Z Installing reline 0.7.0
+2026-11-09T05:27:46.9364074Z Fetching formatador 1.2.3
+2026-11-09T05:27:46.9364873Z Fetching pry 0.16.1
+2026-11-09T05:27:46.9464405Z Installing formatador 1.2.3
+2026-11-09T05:27:46.9604220Z Installing pry 0.16.1
+2026-11-09T05:27:46.9798731Z Fetching guard 2.20.2
+2026-11-09T05:27:46.9918701Z Installing guard 2.20.2
+2026-11-09T05:27:47.0028380Z Fetching guard-rspec 4.7.3
+2026-11-09T05:27:47.0117309Z Installing guard-rspec 4.7.3
+2026-11-09T05:27:51.5853511Z Fetching activesupport 7.2.4
+2026-11-09T05:27:51.6269718Z Installing activesupport 7.2.4
+2026-11-09T05:27:51.6661513Z Fetching activemodel 7.2.4
+2026-11-09T05:27:51.6769357Z Installing activemodel 7.2.4
+2026-11-09T05:27:51.6877948Z Fetching activerecord 7.2.4
+2026-11-09T05:27:51.7189763Z Installing activerecord 7.2.4
+2026-11-09T05:27:51.8052442Z Bundle complete! 7 Gemfile dependencies, 42 gems now installed.
+2026-11-09T05:27:51.8052883Z Use `bundle info [gemname]` to see where a bundled gem is installed.
+2026-11-09T05:27:51.8053192Z Post-install message from minitest:
+2026-11-09T05:27:51.8053708Z NOTE: minitest 5 will be the last in the minitest family to support
+2026-11-09T05:27:51.8054036Z       ruby 1.8 to 2.7. If you need to keep using these versions,
+2026-11-09T05:27:51.8054347Z       you need to pin your dependency to minitest with something
+2026-11-09T05:27:51.8054652Z       like "~> 5.0". See History.rdoc to locate compatible
+2026-11-09T05:27:51.8054905Z       versions.
+2026-11-09T05:27:51.8055013Z 
+2026-11-09T05:27:51.8055280Z       Further, minitest 6 will be dropping the following:
+2026-11-09T05:27:51.8055563Z 
+2026-11-09T05:27:51.8055696Z       + MiniTest (it's been Minitest for >10 years)
+2026-11-09T05:27:51.8060389Z       + MiniTest::Unit
+2026-11-09T05:27:51.8060625Z       + MiniTest::Unit::TestCase
+2026-11-09T05:27:51.8060885Z       + assert_send (unless you argue for it well)
+2026-11-09T05:27:51.8061137Z       + assert_equal nil, obj
+2026-11-09T05:27:51.8061379Z       + mocks and stubs: moving minitest/mock.rb to its own gem
+2026-11-09T05:27:51.8555365Z ##[group]Run bundle exec rspec --format documentation
+2026-11-09T05:27:51.8555742Z [36;1mbundle exec rspec --format documentation[0m
+2026-11-09T05:27:51.8574346Z shell: /usr/bin/bash -e {0}
+2026-11-09T05:27:51.8574559Z ##[endgroup]
+2026-11-09T05:27:52.9917819Z D, [2026-11-09T05:27:52.933068 #2434] DEBUG -- :   [1m[36mCustomer Load (14.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY id[0m
+2026-11-09T05:27:52.9918478Z 
+2026-11-09T05:27:52.9918600Z ActiveRecord practice
+2026-11-09T05:27:52.9918876Z   to find
+2026-11-09T05:27:52.9919119Z     using .where:
+2026-11-09T05:27:52.9919531Z       anyone with first name Candice (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9920329Z       with valid email (email addr contains "@") (HINT: look up SQL LIKE operator) (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9921504Z       with .org emails (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9922209Z       with invalid but nonblank email (does not contain "@") (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9922854Z       with blank email (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9923373Z       born before 1 Jan 1980 (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9923975Z       with valid email AND born before 1/1/1980 (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9924708Z       with last names starting with "B", sorted by birthdate (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9925330Z     without needing .where
+2026-11-09T05:27:52.9925952Z       20 youngest customers, in any order (hint: lookup ActiveRecord `order` and `limit`) (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9926579Z   to update
+2026-11-09T05:27:52.9927106Z     the birthdate of Gussie Murray to February 8,2004 (HINT: lookup `Time.parse`) (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9927856Z     all invalid emails to be blank (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9928560Z     database by deleting customer Meggie Herman (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9929366Z     database by deleting all customers born on or before 31 Dec 1977 (PENDING: Temporarily skipped with xspecify)
+2026-11-09T05:27:52.9929848Z 
+2026-11-09T05:27:52.9930125Z Pending: (Failures listed here are expected and do not affect your suite's status)
+2026-11-09T05:27:52.9930517Z 
+2026-11-09T05:27:52.9930775Z   1) ActiveRecord practice to find using .where: anyone with first name Candice
+2026-11-09T05:27:52.9931264Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9931617Z      # ./spec/activerecord_practice_spec.rb:42
+2026-11-09T05:27:52.9931858Z 
+2026-11-09T05:27:52.9932287Z   2) ActiveRecord practice to find using .where: with valid email (email addr contains "@") (HINT: look up SQL LIKE operator)
+2026-11-09T05:27:52.9932939Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9933300Z      # ./spec/activerecord_practice_spec.rb:46
+2026-11-09T05:27:52.9933535Z 
+2026-11-09T05:27:52.9933742Z   3) ActiveRecord practice to find using .where: with .org emails
+2026-11-09T05:27:52.9934168Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9934510Z      # ./spec/activerecord_practice_spec.rb:50
+2026-11-09T05:27:52.9934683Z 
+2026-11-09T05:27:52.9934908Z   4) ActiveRecord practice to find using .where: with invalid but nonblank email (does not contain "@")
+2026-11-09T05:27:52.9935483Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9935719Z      # ./spec/activerecord_practice_spec.rb:54
+2026-11-09T05:27:52.9935876Z 
+2026-11-09T05:27:52.9936031Z   5) ActiveRecord practice to find using .where: with blank email
+2026-11-09T05:27:52.9936309Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9936538Z      # ./spec/activerecord_practice_spec.rb:58
+2026-11-09T05:27:52.9936689Z 
+2026-11-09T05:27:52.9937104Z   6) ActiveRecord practice to find using .where: born before 1 Jan 1980
+2026-11-09T05:27:52.9937395Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9937615Z      # ./spec/activerecord_practice_spec.rb:62
+2026-11-09T05:27:52.9937765Z 
+2026-11-09T05:27:52.9937959Z   7) ActiveRecord practice to find using .where: with valid email AND born before 1/1/1980
+2026-11-09T05:27:52.9938304Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9938541Z      # ./spec/activerecord_practice_spec.rb:66
+2026-11-09T05:27:52.9938693Z 
+2026-11-09T05:27:52.9938914Z   8) ActiveRecord practice to find using .where: with last names starting with "B", sorted by birthdate
+2026-11-09T05:27:52.9939279Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9939507Z      # ./spec/activerecord_practice_spec.rb:70
+2026-11-09T05:27:52.9939805Z 
+2026-11-09T05:27:52.9940109Z   9) ActiveRecord practice to find without needing .where 20 youngest customers, in any order (hint: lookup ActiveRecord `order` and `limit`)
+2026-11-09T05:27:52.9940557Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9940791Z      # ./spec/activerecord_practice_spec.rb:76
+2026-11-09T05:27:52.9940935Z 
+2026-11-09T05:27:52.9941191Z   10) ActiveRecord practice to update the birthdate of Gussie Murray to February 8,2004 (HINT: lookup `Time.parse`)
+2026-11-09T05:27:52.9941577Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9941801Z      # ./spec/activerecord_practice_spec.rb:87
+2026-11-09T05:27:52.9941951Z 
+2026-11-09T05:27:52.9942087Z   11) ActiveRecord practice to update all invalid emails to be blank
+2026-11-09T05:27:52.9942368Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9942587Z      # ./spec/activerecord_practice_spec.rb:92
+2026-11-09T05:27:52.9942736Z 
+2026-11-09T05:27:52.9942902Z   12) ActiveRecord practice to update database by deleting customer Meggie Herman
+2026-11-09T05:27:52.9943231Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9943455Z      # ./spec/activerecord_practice_spec.rb:97
+2026-11-09T05:27:52.9943601Z 
+2026-11-09T05:27:52.9943827Z   13) ActiveRecord practice to update database by deleting all customers born on or before 31 Dec 1977
+2026-11-09T05:27:52.9944184Z      # Temporarily skipped with xspecify
+2026-11-09T05:27:52.9944413Z      # ./spec/activerecord_practice_spec.rb:102
+2026-11-09T05:27:52.9944573Z 
+2026-11-09T05:27:52.9944700Z Finished in 0.00125 seconds (files took 0.94368 seconds to load)
+2026-11-09T05:27:52.9944978Z 13 examples, 0 failures, 13 pending
+2026-11-09T05:27:52.9945259Z 
+2026-11-09T05:27:53.0042376Z ##[group]Run ruby -e 'File.write("/tmp/ar_spec.rb", File.read("spec/activerecord_practice_spec.rb").gsub(/\bxspecify\b/, "specify"))'
+2026-11-09T05:27:53.0043246Z [36;1mruby -e 'File.write("/tmp/ar_spec.rb", File.read("spec/activerecord_practice_spec.rb").gsub(/\bxspecify\b/, "specify"))'[0m
+2026-11-09T05:27:53.0043747Z [36;1mbundle exec rspec /tmp/ar_spec.rb --format documentation[0m
+2026-11-09T05:27:53.0061834Z shell: /usr/bin/bash -e {0}
+2026-11-09T05:27:53.0062077Z ##[endgroup]
+2026-11-09T05:27:53.7586914Z D, [2026-11-09T05:27:53.710800 #2443] DEBUG -- :   [1m[36mCustomer Load (2.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY id[0m
+2026-11-09T05:27:53.7587524Z 
+2026-11-09T05:27:53.7587648Z ActiveRecord practice
+2026-11-09T05:27:53.7587916Z   to find
+2026-11-09T05:27:53.7588151Z     using .where:
+2026-11-09T05:27:53.7629991Z D, [2026-11-09T05:27:53.762806 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7640213Z D, [2026-11-09T05:27:53.763859 #2443] DEBUG -- :   [1m[36mCustomer Load (1.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE (first = ?)[0m  [[nil, "Candice"]]
+2026-11-09T05:27:53.7643724Z D, [2026-11-09T05:27:53.764265 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7645059Z       anyone with first name Candice
+2026-11-09T05:27:53.7652025Z D, [2026-11-09T05:27:53.765088 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7653239Z D, [2026-11-09T05:27:53.765226 #2443] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE (email LIKE '%@%')[0m
+2026-11-09T05:27:53.7657319Z D, [2026-11-09T05:27:53.765620 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7658290Z       with valid email (email addr contains "@") (HINT: look up SQL LIKE operator)
+2026-11-09T05:27:53.7663256Z D, [2026-11-09T05:27:53.766249 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7664228Z D, [2026-11-09T05:27:53.766354 #2443] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE (email LIKE '%.org')[0m
+2026-11-09T05:27:53.7666569Z D, [2026-11-09T05:27:53.766582 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7667173Z       with .org emails
+2026-11-09T05:27:53.7672674Z D, [2026-11-09T05:27:53.767200 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7674387Z D, [2026-11-09T05:27:53.767310 #2443] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE (email != '' AND email IS NOT NULL AND email NOT LIKE '%@%')[0m
+2026-11-09T05:27:53.7676727Z D, [2026-11-09T05:27:53.767584 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7677420Z       with invalid but nonblank email (does not contain "@")
+2026-11-09T05:27:53.7683920Z D, [2026-11-09T05:27:53.768275 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7685281Z D, [2026-11-09T05:27:53.768380 #2443] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE (email IS NULL OR email = '')[0m
+2026-11-09T05:27:53.7686470Z D, [2026-11-09T05:27:53.768566 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7687046Z       with blank email
+2026-11-09T05:27:53.7695509Z D, [2026-11-09T05:27:53.769468 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7697205Z D, [2026-11-09T05:27:53.769611 #2443] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE (birthdate < ?)[0m  [[nil, "1980-01-01 00:00:00"]]
+2026-11-09T05:27:53.7699874Z D, [2026-11-09T05:27:53.769913 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7700604Z       born before 1 Jan 1980
+2026-11-09T05:27:53.7707339Z D, [2026-11-09T05:27:53.770616 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7708760Z D, [2026-11-09T05:27:53.770742 #2443] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE (email LIKE '%@%' AND birthdate < ?)[0m  [[nil, "1980-01-01 00:00:00"]]
+2026-11-09T05:27:53.7710509Z D, [2026-11-09T05:27:53.770968 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7711205Z       with valid email AND born before 1/1/1980
+2026-11-09T05:27:53.7718117Z D, [2026-11-09T05:27:53.771694 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7719335Z D, [2026-11-09T05:27:53.771823 #2443] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE (last LIKE 'B%') ORDER BY birthdate[0m
+2026-11-09T05:27:53.7723911Z D, [2026-11-09T05:27:53.772315 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7724705Z       with last names starting with "B", sorted by birthdate
+2026-11-09T05:27:53.7725329Z     without needing .where
+2026-11-09T05:27:53.7777872Z D, [2026-11-09T05:27:53.777637 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7780108Z D, [2026-11-09T05:27:53.777894 #2443] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers" ORDER BY birthdate DESC LIMIT ?[0m  [["LIMIT", 20]]
+2026-11-09T05:27:53.7783775Z D, [2026-11-09T05:27:53.778265 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7784580Z       20 youngest customers, in any order (hint: lookup ActiveRecord `order` and `limit`)
+2026-11-09T05:27:53.7785087Z   to update
+2026-11-09T05:27:53.7799784Z D, [2026-11-09T05:27:53.779848 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7801447Z D, [2026-11-09T05:27:53.779980 #2443] DEBUG -- :   [1m[36mCustomer Update All (0.1ms)[0m  [1m[33mUPDATE "customers" SET "birthdate" = ? WHERE "customers"."first" = ? AND "customers"."last" = ?[0m  [["birthdate", "2004-02-08 00:00:00"], ["first", "Gussie"], ["last", "Murray"]]
+2026-11-09T05:27:53.7804514Z D, [2026-11-09T05:27:53.780328 #2443] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."first" = ? LIMIT ?[0m  [["first", "Gussie"], ["LIMIT", 1]]
+2026-11-09T05:27:53.7806396Z D, [2026-11-09T05:27:53.780556 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7807150Z     the birthdate of Gussie Murray to February 8,2004 (HINT: lookup `Time.parse`)
+2026-11-09T05:27:53.7811714Z D, [2026-11-09T05:27:53.781057 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7812969Z D, [2026-11-09T05:27:53.781177 #2443] DEBUG -- :   [1m[36mCustomer Update All (0.1ms)[0m  [1m[33mUPDATE "customers" SET "email" = ? WHERE (email NOT LIKE '%@%' AND email != '' AND email IS NOT NULL)[0m  [["email", ""]]
+2026-11-09T05:27:53.7815242Z D, [2026-11-09T05:27:53.781435 #2443] DEBUG -- :   [1m[36mCustomer Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "customers" WHERE (email != '' AND email IS NOT NULL and email NOT LIKE '%@%')[0m
+2026-11-09T05:27:53.7828351Z D, [2026-11-09T05:27:53.782757 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7829053Z     all invalid emails to be blank
+2026-11-09T05:27:53.7834226Z D, [2026-11-09T05:27:53.783303 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7836104Z D, [2026-11-09T05:27:53.783417 #2443] DEBUG -- :   [1m[36mCustomer Delete All (0.1ms)[0m  [1m[31mDELETE FROM "customers" WHERE "customers"."first" = ? AND "customers"."last" = ?[0m  [["first", "Meggie"], ["last", "Herman"]]
+2026-11-09T05:27:53.7838939Z D, [2026-11-09T05:27:53.783746 #2443] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."first" = ? AND "customers"."last" = ? LIMIT ?[0m  [["first", "Meggie"], ["last", "Herman"], ["LIMIT", 1]]
+2026-11-09T05:27:53.7840413Z D, [2026-11-09T05:27:53.783891 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7841043Z     database by deleting customer Meggie Herman
+2026-11-09T05:27:53.7846138Z D, [2026-11-09T05:27:53.784540 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+2026-11-09T05:27:53.7847145Z D, [2026-11-09T05:27:53.784641 #2443] DEBUG -- :   [1m[36mCustomer Delete All (0.1ms)[0m  [1m[31mDELETE FROM "customers" WHERE (birthdate < ?)[0m  [[nil, "1978-01-01 08:00:00"]]
+2026-11-09T05:27:53.7853708Z D, [2026-11-09T05:27:53.785274 #2443] DEBUG -- :   [1m[36mCustomer Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "customers" WHERE (birthdate < ?) LIMIT ?[0m  [[nil, "1978-01-01 08:00:00"], ["LIMIT", 1]]
+2026-11-09T05:27:53.7854950Z D, [2026-11-09T05:27:53.785394 #2443] DEBUG -- :   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+2026-11-09T05:27:53.7855873Z     database by deleting all customers born on or before 31 Dec 1977
+2026-11-09T05:27:53.7858261Z 
+2026-11-09T05:27:53.7858484Z Finished in 0.02779 seconds (files took 0.51071 seconds to load)
+2026-11-09T05:27:53.7858873Z 13 examples, 0 failures
+2026-11-09T05:27:53.7859149Z 
+2026-11-09T05:27:53.8004078Z ##[group]Run actions/upload-artifact@v4
+2026-11-09T05:27:53.8004319Z with:
+2026-11-09T05:27:53.8004492Z   name: activerecord-results
+2026-11-09T05:27:53.8004865Z   path: lib/activerecord_practice.rb
+spec/activerecord_practice_spec.rb
+customers-original.sqlite3
+
+2026-11-09T05:27:53.8005449Z   if-no-files-found: warn
+2026-11-09T05:27:53.8005662Z   compression-level: 6
+2026-11-09T05:27:53.8005850Z   overwrite: false
+2026-11-09T05:27:53.8006031Z   include-hidden-files: false
+2026-11-09T05:27:53.8006222Z ##[endgroup]
+2026-11-09T05:27:53.9398916Z (node:2446) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-09T05:27:53.9399655Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-09T05:27:53.9475862Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-09T05:27:53.9478402Z The least common ancestor is /home/runner/work/cs169-hw-activerecord-practice/cs169-hw-activerecord-practice. This will be the root directory of the artifact
+2026-11-09T05:27:53.9479491Z With the provided path, there will be 2 files uploaded
+2026-11-09T05:27:53.9480324Z Artifact name is valid!
+2026-11-09T05:27:53.9480732Z Root directory input is valid!
+2026-11-09T05:27:54.5314747Z Beginning upload of artifact content to blob storage
+2026-11-09T05:27:54.6242691Z (node:2446) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-09T05:27:54.8900181Z Uploaded bytes 2563
+2026-11-09T05:27:54.9631136Z Finished uploading artifact content to blob storage!
+2026-11-09T05:27:54.9631737Z SHA256 digest of uploaded artifact zip is 567592e61dc5276161b644033c58e9c434e292869705addd90a979f58a749528
+2026-11-09T05:27:54.9649462Z Finalizing artifact upload
+2026-11-09T05:27:55.3912166Z Artifact activerecord-results.zip successfully finalized. Artifact ID 13651747032
+2026-11-09T05:27:55.3912799Z Artifact activerecord-results has been successfully uploaded! Final size is 2563 bytes. Artifact ID is 13651747032
+2026-11-09T05:27:55.3918080Z Artifact download URL: https://github.com/edidada/cs169-hw-activerecord-practice/actions/runs/42567425073/artifacts/13651747032
+2026-11-09T05:27:55.4107915Z Post job cleanup.
+2026-11-09T05:27:55.4823619Z [command]/usr/bin/git version
+2026-11-09T05:27:55.4863414Z git version 2.56.0
+2026-11-09T05:27:55.4899604Z Temporarily overriding HOME='/home/runner/work/_temp/28f4ba8c-5a60-4894-a684-43259815a3a1' before making global git config changes
+2026-11-09T05:27:55.4900598Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-09T05:27:55.4904840Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cs169-hw-activerecord-practice/cs169-hw-activerecord-practice
+2026-11-09T05:27:55.4945650Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-09T05:27:55.4981157Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-09T05:27:55.5217927Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-09T05:27:55.5246177Z http.https://github.com/.extraheader
+2026-11-09T05:27:55.5258041Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-09T05:27:55.5288046Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-09T05:27:55.5556576Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-09T05:27:55.5606620Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-09T05:27:55.5965490Z Cleaning up orphan processes
+2026-11-09T05:27:55.6298391Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
